@@ -1,13 +1,23 @@
-const path = require('path'); //node api
-function resolve(dir){   //获取文件路劲
-    return path.join(__dirname,dir);
+const path = require("path"); //node api
+function resolve(dir) {
+  //获取文件路劲
+  return path.join(__dirname, dir);
 }
-module.exports={
-    configureWebpack:{
-        resolve:{
-            alias:{
-                "@":resolve('src'), //起别名
-            }
-        }
-    }
-}
+module.exports = {
+  configureWebpack: {
+    resolve: {
+      alias: {
+        "@": resolve("src") //起别名
+      }
+    },
+    // plugins: [
+    //     [
+    //       "component", // 删掉[]
+    //       {
+    //         libraryName: "element-ui",
+    //         styleLibraryName: "theme-chalk"
+    //       }
+    //     ]
+    // ],
+  },
+};

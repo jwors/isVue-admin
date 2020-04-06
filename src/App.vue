@@ -5,8 +5,11 @@
 </template>
 <script>
 export default {
-   name:'App'
-}
+  name: "App"
+};
 </script>
-<style lang="scss">
+<style lang="scss" scope>
+#app {
+  height: 100%;
+}
 </style>
