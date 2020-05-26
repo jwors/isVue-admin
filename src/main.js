@@ -1,14 +1,14 @@
 import Vue from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
-import "element-ui/lib/theme-chalk/index.css";
 import router from "./router";
 import store from "./store";
 import "@/style/index.scss";
-import { Input } from "element-ui";
+// import 'element-ui/lib/theme-chalk/index.css'
+// import { input } from "element-ui";
 
 Vue.config.productionTip = false;
-Vue.use(Input);
+// Vue.use(input);
 new Vue({
   router,
   store,

@@ -4,20 +4,14 @@ function resolve(dir) {
   return path.join(__dirname, dir);
 }
 module.exports = {
+  devServer:{
+    before:require('./mock.js/index')
+  },
   configureWebpack: {
     resolve: {
       alias: {
         "@": resolve("src") //起别名
       }
     },
-    // plugins: [
-    //     [
-    //       "component", // 删掉[]
-    //       {
-    //         libraryName: "element-ui",
-    //         styleLibraryName: "theme-chalk"
-    //       }
-    //     ]
-    // ],
   },
 };
